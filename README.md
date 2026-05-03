@@ -1,64 +1,72 @@
-# 💰 Mini Expense Tracker
-
-A professional, responsive dashboard for tracking personal finances. Built with **React**, **Vite**, and **Tailwind CSS**, featuring real-time data visualization and persistent storage.
-
-**Live Demo:** [🚀 mexpense-tracker.netlify.app](https://mexpense-tracker.netlify.app/)
+📊 Mini Expense Tracker
 
 
+**Live Demo:**  https://mexpense-tracker.netlify.app/ 
 
----
+A high-performance financial dashboard engineered for real-time data tracking and visualization. This project focuses on state persistence, modular component architecture, and accessible UI/UX.
 
-## 🚀 Features
 
-- **Real-time Tracking:** Add and delete expenses with instant UI updates.
-- **Data Visualization:** Dynamic horizontal bar chart that categorizes spending using Recharts.
-- **Data Persistence:** Uses Browser `localStorage` to ensure your data stays saved even after a page refresh.
-- **Responsive Design:** Mobile-first approach styled with Tailwind CSS for a seamless experience on any device.
-- **Smart Form Validation:** Prevents empty entries and includes category-specific selection.
+🚀 Key Engineering Features
 
-## 🛠️ Tech Stack
+    Real-time State Sync: Implemented instant UI synchronization for expense lifecycle management (Create/Delete) using optimized React hooks.
 
-- **Frontend:** React.js (Vite)
-- **Styling:** Tailwind CSS
-- **Charts:** Recharts / Custom SVG Components
-- **Deployment:** Netlify
-- **State Management:** React Hooks (`useState`, `useEffect`)
+    Dynamic Data Visualization: Architected a responsive horizontal bar chart using Recharts, providing categorical spending breakdowns and data-driven insights.
 
-## 📂 Project Structure
+    Resilient Data Persistence: Engineered a local storage integration layer to ensure data integrity across browser sessions and page refreshes.
 
-```text
+    Responsive & Accessible Design: Built with a mobile-first strategy using Tailwind CSS, ensuring WCAG-compliant accessibility and seamless layouts across all breakpoints.
+
+    Smart Validation Logic: Integrated robust form validation to maintain data hygiene and prevent malformed entries.
+
+🛠️ Tech Stack
+
+    Core: React.js (Vite)
+
+    Architecture: Component-Based Design
+
+    Styling: Tailwind CSS
+
+    Data Visualization: Recharts / Custom SVG Components
+
+    State Management: React Hooks (useState, useEffect)
+
+    Deployment: Netlify
+
+📂 Project Architecture
+Plaintext
+
 src/
 ├── components/
-│   ├── ExpenseForm.jsx       # Data entry with validation
-│   ├── ExpenseBarChart.jsx   # Visual representation of data
-│   ├── ExpenseSummary.jsx    # Calculations and list management
-│   ├── Hero.jsx              # Branding and header section
-│   └── Footer.jsx            # Project credits
-├── App.jsx                   # Main logic and persistence layer
-└── main.jsx                  # Entry point
+│   ├── ExpenseForm.jsx       # Logic for data entry and input validation
+│   ├── ExpenseBarChart.jsx   # Recharts integration for data visualization
+│   ├── ExpenseSummary.jsx    # Business logic for calculations and list state
+│   ├── Hero.jsx              # Branding and entry UI
+│   └── Footer.jsx            # Metadata and credits
+├── App.jsx                   # Central logic, state management, and persistence layer
+└── main.jsx                  # Application entry point
 
-⚙️ Local Setup
-Follow these steps to get the project running on your local machine:
+⚙️ Installation & Development
 
-Clone the repository
+To get the environment running locally:
 
-Bash
+    Clone the repository
+    Bash
 
-git clone https://github.com/angras2881/mini-expense-tracker.git
-Navigate to the project folder Note: The React application is located within the expense-tracker subdirectory.
-cd mini-expense-tracker/expense-tracker
+    git clone https://github.com/s-angra28/Expense-Tracker.git
 
-Bash
+    Navigate to the workspace
+    Bash
 
-cd expense-tracker
-Install dependencies Make sure you have Node.js installed.
+    cd Expense-Tracker
 
-Bash
+    Install dependencies
+    Bash
 
-npm install
-Start the development server
+    npm install
 
-Bash
+    Launch development server
+    Bash
 
-npm run dev
-View the app Open your browser and navigate to http://localhost:5173 (or the port shown in your terminal).
+    npm run dev
+
+    The application will be served at http://localhost:5173.
