@@ -17,6 +17,7 @@ Responsive UI: Built with Tailwind CSS using a mobile-first approach for seamles
 Form Validation: Added input validation to ensure clean and consistent data entry.
 
 🛠️ Tech Stack
+
 React.js (Vite)
 Tailwind CSS
 Recharts
